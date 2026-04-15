@@ -1,0 +1,16 @@
+node_modules/
+.DS_Store
+*.log
+.vscode/
+.gemini/
+.agent/
+_agent/
+.agents/
+tmp/
+*.webp
+*.png
+*.jpg
+*.jpeg
+*.gif
+*.svg
+!assets/

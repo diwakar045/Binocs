@@ -1,0 +1,544 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Binocs – Agentic Report Flow</title>
+<meta name="description" content="Binocs Agentic Report Flow - Generate AI-powered industry reports, investment memos, and growth strategies." />
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+<!-- ══════ TOP NAV ══════ -->
+<header class="topbar" id="topbar">
+  <div class="topbar-logo">
+    <!-- Binocs logo mark -->
+    <svg width="25" height="16" viewBox="0 0 25.38 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <path d="M11.392 2.941C11.519 2.941 11.645 2.941 11.835 2.941C14.873 2.941 17.405 5.235 17.405 8.118C17.405 10.235 16.012 12.118 13.987 12.882C13.861 12.882 13.797 12.882 13.671 12.882C10.633 12.882 8.101 10.588 8.101 7.706C8.101 5.588 9.430 3.765 11.392 2.941ZM0 3C0 10.176 6.266 16 13.987 16L13.987 13L25.379 13C25.379 5.824 19.114 0 11.392 0L11.392 2.941Z" fill="#23BC6A"/>
+    </svg>
+    <!-- Binocs wordmark -->
+    <svg width="55" height="11" viewBox="0 0 55 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <path d="M0 10.838V0.146H4.093C4.866 0.146 5.508 0.268 6.019 0.512C6.535 0.752 6.919 1.081 7.173 1.498C7.431 1.916 7.560 2.389 7.560 2.918C7.560 3.353 7.476 3.726 7.309 4.036C7.142 4.342 6.917 4.590 6.636 4.782C6.354 4.974 6.039 5.111 5.691 5.195V5.299C6.070 5.320 6.434 5.436 6.782 5.649C7.133 5.858 7.420 6.153 7.643 6.536C7.866 6.919 7.977 7.382 7.977 7.925C7.977 8.478 7.843 8.976 7.575 9.418C7.307 9.857 6.904 10.203 6.364 10.457C5.825 10.711 5.146 10.838 4.328 10.838H0ZM1.937 9.220H4.020C4.723 9.220 5.229 9.086 5.539 8.818C5.852 8.546 6.009 8.198 6.009 7.774C6.009 7.457 5.931 7.171 5.774 6.917C5.617 6.660 5.395 6.458 5.106 6.312C4.817 6.162 4.472 6.087 4.072 6.087H1.937V9.220ZM1.937 4.693H3.853C4.187 4.693 4.488 4.632 4.756 4.511C5.024 4.385 5.235 4.210 5.388 3.983C5.544 3.754 5.623 3.482 5.623 3.169C5.623 2.755 5.476 2.414 5.184 2.146C4.895 1.878 4.465 1.744 3.895 1.744H1.937V4.693ZM11.599 0.146V10.838H9.662V0.146H11.599ZM22.483 0.146V10.838H20.760L15.722 3.555H15.633V10.838H13.696V0.146H15.430L20.463 7.434H20.556V0.146H22.483ZM34.147 5.492C34.147 6.644 33.931 7.631 33.500 8.452C33.072 9.270 32.487 9.897 31.746 10.332C31.008 10.767 30.171 10.984 29.235 10.984C28.298 10.984 27.460 10.767 26.718 10.332C25.980 9.893 25.396 9.265 24.964 8.447C24.536 7.626 24.322 6.641 24.322 5.492C24.322 4.340 24.536 3.355 24.964 2.537C25.396 1.716 25.980 1.088 26.718 0.653C27.460 0.218 28.298 0 29.235 0C30.171 0 31.008 0.218 31.746 0.653C32.487 1.088 33.072 1.716 33.500 2.537C33.931 3.355 34.147 4.340 34.147 5.492ZM32.200 5.492C32.200 4.681 32.073 3.997 31.819 3.440C31.568 2.880 31.220 2.457 30.775 2.172C30.329 1.883 29.816 1.738 29.235 1.738C28.653 1.738 28.140 1.883 27.694 2.172C27.249 2.457 26.899 2.880 26.645 3.440C26.394 3.997 26.269 4.681 26.269 5.492C26.269 6.303 26.394 6.989 26.645 7.549C26.899 8.106 27.249 8.529 27.694 8.818C28.140 9.103 28.653 9.246 29.235 9.246C29.816 9.246 30.329 9.103 30.775 8.818C31.220 8.529 31.568 8.106 31.819 7.549C32.073 6.989 32.200 6.303 32.200 5.492ZM45.130 3.754L43.178 3.754C43.122 3.433 43.019 3.150 42.870 2.903C42.720 2.652 42.534 2.440 42.311 2.266C42.088 2.092 41.835 1.961 41.549 1.874C41.267 1.784 40.962 1.738 40.635 1.738C40.054 1.738 39.539 1.885 39.090 2.177C38.641 2.466 38.290 2.891 38.036 3.451C37.782 4.008 37.654 4.688 37.654 5.492C37.654 6.310 37.782 6.999 38.036 7.560C38.293 8.116 38.644 8.538 39.090 8.823C39.539 9.105 40.052 9.246 40.630 9.246C40.950 9.246 41.250 9.204 41.528 9.121C41.810 9.034 42.062 8.907 42.285 8.739C42.512 8.572 42.700 8.367 42.854 8.123C43.011 7.880 43.119 7.601 43.178 7.288L45.130 7.299C45.057 7.807 44.899 8.283 44.655 8.729C44.415 9.175 44.100 9.568 43.710 9.909C43.321 10.246 42.864 10.511 42.342 10.702C41.821 10.890 41.241 10.984 40.604 10.984C39.664 10.984 38.826 10.767 38.088 10.332C37.350 9.897 36.769 9.268 36.344 8.447C35.919 7.626 35.707 6.641 35.707 5.492C35.707 4.340 35.921 3.355 36.349 2.537C36.777 1.716 37.360 1.088 38.098 0.653C38.836 0.218 39.671 0 40.604 0C41.199 0 41.752 0.084 42.264 0.251C42.775 0.418 43.232 0.663 43.632 0.987C44.032 1.307 44.361 1.700 44.619 2.167C44.880 2.629 45.051 3.159 45.130 3.754ZM52.715 3.085C52.666 2.629 52.461 2.274 52.099 2.020C51.740 1.766 51.274 1.639 50.700 1.639C50.296 1.639 49.949 1.700 49.661 1.822C49.372 1.944 49.150 2.109 48.997 2.318C48.844 2.527 48.766 2.765 48.763 3.033C48.763 3.256 48.813 3.449 48.914 3.613C49.018 3.776 49.160 3.916 49.337 4.030C49.514 4.142 49.711 4.236 49.927 4.312C50.143 4.389 50.360 4.453 50.580 4.505L51.582 4.756C51.985 4.850 52.374 4.977 52.746 5.137C53.122 5.297 53.458 5.499 53.754 5.743C54.053 5.986 54.290 6.281 54.464 6.625C54.638 6.970 54.725 7.373 54.725 7.836C54.725 8.463 54.564 9.014 54.244 9.491C53.924 9.965 53.461 10.335 52.856 10.603C52.254 10.868 51.524 11 50.668 11C49.836 11 49.114 10.871 48.502 10.614C47.892 10.356 47.416 9.980 47.071 9.486C46.730 8.992 46.548 8.390 46.518 7.680L48.423 7.680C48.451 8.052 48.566 8.362 48.768 8.609C48.970 8.856 49.232 9.040 49.556 9.162C49.883 9.284 50.249 9.345 50.652 9.345C51.074 9.345 51.443 9.282 51.759 9.157C52.080 9.028 52.330 8.851 52.511 8.625C52.692 8.395 52.784 8.127 52.788 7.821C52.784 7.542 52.703 7.312 52.542 7.131C52.382 6.947 52.157 6.794 51.869 6.672C51.583 6.547 51.250 6.435 50.866 6.338L49.650 6.025C48.769 5.798 48.073 5.456 47.562 4.996C47.054 4.533 46.799 3.919 46.799 3.153C46.799 2.523 46.970 1.972 47.311 1.498C47.656 1.025 48.124 0.658 48.715 0.397C49.307 0.132 49.977 0 50.725 0C51.484 0 52.149 0.132 52.720 0.397C53.294 0.658 53.745 1.022 54.072 1.488C54.399 1.951 54.568 2.483 54.578 3.085H52.715Z" fill="#141414"/>
+    </svg>
+  </div>
+
+  <div class="topbar-right">
+    <div class="topbar-ppt" id="ppt-template-btn">
+      <!-- paint icon -->
+      <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M8 16C6.95 16 5.91 15.79 4.94 15.39C3.97 14.99 3.09 14.4 2.34 13.66C0.84 12.16 0 10.12 0 8C0 5.88 0.84 3.84 2.34 2.34C3.84 0.84 5.88 0 8 0C12.4 0 16 3.2 16 7.2C16 8.47 15.49 9.69 14.59 10.59C13.69 11.49 12.47 12 11.2 12H9.76C9.52 12 9.36 12.16 9.36 12.4C9.36 12.48 9.44 12.56 9.44 12.64C9.76 13.04 9.92 13.52 9.92 14C10 15.12 9.12 16 8 16ZM8 1.6C6.3 1.6 4.67 2.27 3.47 3.47C2.27 4.67 1.6 6.3 1.6 8C1.6 9.7 2.27 11.33 3.47 12.53C4.67 13.73 6.3 14.4 8 14.4C8.24 14.4 8.4 14.24 8.4 14C8.4 13.84 8.32 13.76 8.32 13.68C8 13.28 7.84 12.88 7.84 12.4C7.84 11.28 8.72 10.4 9.84 10.4H11.2C12.05 10.4 12.86 10.06 13.46 9.46C14.06 8.86 14.4 8.05 14.4 7.2C14.4 4.08 11.52 1.6 8 1.6ZM3.6 6.4C4.24 6.4 4.8 6.96 4.8 7.6C4.8 8.24 4.24 8.8 3.6 8.8C2.96 8.8 2.4 8.24 2.4 7.6C2.4 6.96 2.96 6.4 3.6 6.4ZM6 3.2C6.64 3.2 7.2 3.76 7.2 4.4C7.2 5.04 6.64 5.6 6 5.6C5.36 5.6 4.8 5.04 4.8 4.4C4.8 3.76 5.36 3.2 6 3.2ZM10 3.2C10.64 3.2 11.2 3.76 11.2 4.4C11.2 5.04 10.64 5.6 10 5.6C9.36 5.6 8.8 5.04 8.8 4.4C8.8 3.76 9.36 3.2 10 3.2ZM12.4 6.4C13.04 6.4 13.6 6.96 13.6 7.6C13.6 8.24 13.04 8.8 12.4 8.8C11.76 8.8 11.2 8.24 11.2 7.6C11.2 6.96 11.76 6.4 12.4 6.4Z" fill="#403F42"/>
+      </svg>
+      PPT Template
+    </div>
+    <div class="topbar-icons">
+      <!-- Support icon (headset) -->
+      <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg" id="support-icon">
+        <path d="M4 11V10C4 6.69 6.69 4 10 4C13.31 4 16 6.69 16 10V11" stroke="#403F42" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round"/>
+        <path d="M16 11.5C16 11.22 16.22 11 16.5 11H17C17.55 11 18 11.45 18 12V14C18 14.55 17.55 15 17 15H16.5C16.22 15 16 14.78 16 14.5V11.5Z" stroke="#403F42" stroke-width="1.3"/>
+        <path d="M4 11.5C4 11.22 3.78 11 3.5 11H3C2.45 11 2 11.45 2 12V14C2 14.55 2.45 15 3 15H3.5C3.78 15 4 14.78 4 14.5V11.5Z" stroke="#403F42" stroke-width="1.3"/>
+        <path d="M16 15V15.5C16 16.33 15.33 17 14.5 17H11" stroke="#403F42" stroke-width="1.3" stroke-linecap="round"/>
+        <rect x="9" y="16" width="2" height="1.5" rx="0.75" stroke="#403F42" stroke-width="1.2"/>
+      </svg>
+      <!-- Settings icon (gear cog) -->
+      <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg" id="settings-icon">
+        <path d="M10 12.5C11.38 12.5 12.5 11.38 12.5 10C12.5 8.62 11.38 7.5 10 7.5C8.62 7.5 7.5 8.62 7.5 10C7.5 11.38 8.62 12.5 10 12.5Z" stroke="#403F42" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round"/>
+        <path d="M16.17 12.5C16.06 12.74 16.02 13.01 16.06 13.27C16.1 13.53 16.22 13.77 16.4 13.97L16.47 14.04C16.61 14.18 16.73 14.35 16.81 14.53C16.89 14.72 16.93 14.92 16.93 15.12C16.93 15.33 16.89 15.53 16.81 15.72C16.73 15.9 16.61 16.07 16.47 16.21C16.33 16.35 16.16 16.47 15.98 16.55C15.79 16.63 15.59 16.67 15.39 16.67C15.18 16.67 14.98 16.63 14.8 16.55C14.61 16.47 14.44 16.35 14.3 16.21L14.23 16.14C14.03 15.96 13.79 15.84 13.53 15.8C13.27 15.76 13 15.8 12.76 15.91C12.53 16.01 12.33 16.18 12.19 16.39C12.05 16.6 11.98 16.85 11.97 17.1V17.33C11.97 17.75 11.81 18.14 11.51 18.44C11.22 18.74 10.82 18.9 10.4 18.9H9.6C9.18 18.9 8.78 18.74 8.49 18.44C8.19 18.14 8.03 17.75 8.03 17.33V17.21C8.02 16.95 7.94 16.69 7.79 16.48C7.64 16.27 7.43 16.1 7.18 16C6.94 15.89 6.68 15.85 6.42 15.89C6.16 15.93 5.92 16.05 5.72 16.23L5.65 16.3C5.51 16.44 5.34 16.56 5.15 16.64C4.97 16.72 4.77 16.76 4.57 16.76C4.36 16.76 4.16 16.72 3.98 16.64C3.79 16.56 3.62 16.44 3.48 16.3C3.34 16.16 3.22 15.99 3.14 15.8C3.06 15.62 3.02 15.42 3.02 15.21C3.02 15.01 3.06 14.81 3.14 14.62C3.22 14.44 3.34 14.27 3.48 14.13L3.55 14.06C3.73 13.86 3.85 13.62 3.89 13.36C3.93 13.1 3.89 12.83 3.78 12.59C3.68 12.36 3.51 12.16 3.3 12.02C3.09 11.88 2.84 11.81 2.59 11.8H2.37C1.95 11.8 1.55 11.64 1.26 11.34C0.96 11.05 0.8 10.65 0.8 10.23V9.43C0.8 9.01 0.96 8.62 1.26 8.32C1.55 8.02 1.95 7.87 2.37 7.87H2.48C2.74 7.86 2.99 7.78 3.2 7.63C3.41 7.48 3.58 7.27 3.68 7.02C3.79 6.78 3.83 6.52 3.79 6.26C3.75 6 3.63 5.76 3.45 5.56L3.38 5.49C3.24 5.35 3.12 5.18 3.04 4.99C2.96 4.81 2.92 4.61 2.92 4.4C2.92 4.2 2.96 4 3.04 3.82C3.12 3.63 3.24 3.46 3.38 3.32C3.52 3.18 3.69 3.06 3.88 2.98C4.06 2.9 4.26 2.86 4.47 2.86C4.67 2.86 4.87 2.9 5.06 2.98C5.24 3.06 5.41 3.18 5.55 3.32L5.62 3.39C5.82 3.57 6.06 3.69 6.32 3.73C6.58 3.77 6.85 3.73 7.09 3.62H7.18C7.41 3.52 7.61 3.35 7.75 3.14C7.89 2.93 7.96 2.68 7.97 2.43V2.2C7.97 1.78 8.13 1.39 8.43 1.09C8.72 0.79 9.12 0.63 9.54 0.63H10.34C10.76 0.63 11.16 0.79 11.45 1.09C11.75 1.39 11.91 1.78 11.91 2.2V2.32C11.92 2.58 11.99 2.83 12.13 3.04C12.27 3.25 12.47 3.42 12.7 3.52C12.94 3.63 13.2 3.67 13.46 3.63C13.72 3.59 13.96 3.47 14.16 3.29L14.23 3.22C14.37 3.08 14.54 2.96 14.73 2.88C14.91 2.8 15.11 2.76 15.32 2.76C15.52 2.76 15.72 2.8 15.91 2.88C16.09 2.96 16.26 3.08 16.4 3.22C16.54 3.36 16.66 3.53 16.74 3.72C16.82 3.9 16.86 4.1 16.86 4.31C16.86 4.51 16.82 4.71 16.74 4.9C16.66 5.08 16.54 5.25 16.4 5.39L16.33 5.46C16.15 5.66 16.03 5.9 15.99 6.16C15.95 6.42 15.99 6.69 16.1 6.93V7.02C16.2 7.25 16.37 7.45 16.58 7.59C16.79 7.73 17.04 7.8 17.29 7.81H17.52C17.94 7.81 18.33 7.97 18.63 8.27C18.93 8.56 19.09 8.96 19.09 9.38V10.18C19.09 10.6 18.93 10.99 18.63 11.29C18.33 11.59 17.94 11.75 17.52 11.75H17.4C17.14 11.76 16.89 11.83 16.68 11.97C16.47 12.11 16.3 12.31 16.17 12.5Z" stroke="#403F42" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round"/>
+      </svg>
+    </div>
+  </div>
+</header>
+
+<!-- ══════ SIDEBAR ══════ -->
+<aside class="sidebar" id="sidebar">
+  <nav class="sidebar-nav">
+    <!-- Industry Analysis (active) -->
+    <div class="nav-item active" id="nav-industry-analysis">
+      <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" class="icon">
+        <path d="M0 5.33C0 5.33 3.69 0 8 5.33C12.31 10.67 16 5.33 16 5.33" stroke="#24855F" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/>
+        <line x1="0" y1="8" x2="0" y2="12" stroke="#24855F" stroke-width="1.2" stroke-linecap="round"/>
+        <line x1="4" y1="6.67" x2="4" y2="12" stroke="#24855F" stroke-width="1.2" stroke-linecap="round"/>
+        <line x1="8" y1="8.67" x2="8" y2="12" stroke="#24855F" stroke-width="1.2" stroke-linecap="round"/>
+        <line x1="12" y1="4" x2="12" y2="12" stroke="#24855F" stroke-width="1.2" stroke-linecap="round"/>
+      </svg>
+      Industry Analysis
+    </div>
+
+    <!-- Investment Memo -->
+    <div class="nav-item" id="nav-investment-memo">
+      <svg width="14" height="13" viewBox="0 0 14.33 13" fill="none" xmlns="http://www.w3.org/2000/svg" class="icon">
+        <path d="M4.67 2.17H9.67V1.18C9.67 1.05 9.61 0.93 9.51 0.83C9.4 0.72 9.28 0.67 9.15 0.67H5.18C5.05 0.67 4.93 0.72 4.83 0.83C4.72 0.93 4.67 1.05 4.67 1.18V2.17ZM13.67 8.17H8.83V9.5H5.5V8.17H0.67V11.32C0.67 11.45 0.72 11.57 0.83 11.67C0.93 11.78 1.05 11.83 1.18 11.83H13.15C13.28 11.83 13.4 11.78 13.51 11.67C13.61 11.57 13.67 11.45 13.67 11.32V8.17ZM6.17 8.83H8.17V6.83H6.17V8.83ZM0.67 7.5H5.5V6.17H8.83V7.5H13.67V3.35C13.67 3.22 13.61 3.1 13.51 2.99C13.4 2.89 13.28 2.83 13.15 2.83H1.18C1.05 2.83 0.93 2.89 0.83 2.99C0.72 3.1 0.67 3.22 0.67 3.35V7.5Z" fill="#3D3D3D"/>
+      </svg>
+      Investment Memo
+    </div>
+
+    <!-- Generate Report -->
+    <div class="nav-item" id="nav-generate-report" onclick="window.location.href='report.html'" style="cursor:pointer">
+      <svg width="14" height="16" viewBox="0 0 14 16" fill="none" xmlns="http://www.w3.org/2000/svg" class="icon">
+        <path d="M1.5 0.5H9L13.5 5V14.5C13.5 15.05 13.05 15.5 12.5 15.5H1.5C0.95 15.5 0.5 15.05 0.5 14.5V1.5C0.5 0.95 0.95 0.5 1.5 0.5Z" stroke="#3D3D3D" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/>
+        <path d="M9 0.5V5H13.5" stroke="#3D3D3D" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/>
+        <line x1="3.5" y1="8.5" x2="10.5" y2="8.5" stroke="#3D3D3D" stroke-width="1.2" stroke-linecap="round"/>
+        <line x1="3.5" y1="11" x2="8" y2="11" stroke="#3D3D3D" stroke-width="1.2" stroke-linecap="round"/>
+      </svg>
+      Generate Report
+    </div>
+  </nav>
+
+  <div class="sidebar-bottom">
+    <!-- Credits card -->
+    <div class="credits-card" id="credits-card">
+      <div class="credits-top">
+        <svg width="20" height="20" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M15 3.33C15 5.18 11.64 6.67 7.5 6.67C3.36 6.67 0 5.18 0 3.33M15 3.33C15 1.49 11.64 0 7.5 0C3.36 0 0 1.49 0 3.33M15 3.33V7.5M0 3.33V7.5M15 7.5C15 9.34 11.64 10.83 7.5 10.83C3.36 10.83 0 9.34 0 7.5M15 7.5V11.67C15 13.51 11.64 15 7.5 15C3.36 15 0 13.51 0 11.67V7.5" stroke="#24855F" stroke-width="1.2" stroke-linecap="round"/>
+        </svg>
+        <strong>10000</strong><span>Credits Left</span>
+      </div>
+      <div class="credits-bar"><div class="credits-bar-fill"></div></div>
+    </div>
+
+    <!-- Separator line element -->
+    <div style="height:1px; background: var(--grey-border); margin: 8px 0;"></div>
+
+    <!-- User -->
+    <div class="sidebar-user" id="sidebar-user">
+      <div class="avatar">V</div>
+      <span class="user-email">Vksingh@binocs.co</span>
+    </div>
+
+    <!-- Org -->
+    <div class="sidebar-org" id="sidebar-org">
+      <div class="org-icon">
+        <!-- Star-like org icon -->
+        <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <polygon points="8,1 9.8,6.2 15,6.2 10.6,9.4 12.4,14.6 8,11.4 3.6,14.6 5.4,9.4 1,6.2 6.2,6.2" fill="#24855F" opacity=".9"/>
+        </svg>
+      </div>
+      <span class="org-name">DLS GROUP</span>
+      <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg" style="margin-left:auto">
+        <path d="M3 5l4 4 4-4" stroke="#9F9F9F" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round"/>
+      </svg>
+    </div>
+  </div>
+</aside>
+
+<!-- ══════ MAIN CONTENT ══════ -->
+<main class="main">
+
+  <!-- Content sub-header -->
+  <div class="content-header">
+    <div class="content-header-left">
+      <span class="page-title">Industry Analysis</span>
+    </div>
+    <div class="content-header-right">
+      <div class="search-box">
+        <input type="text" placeholder="Search" />
+        <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
+          <circle cx="7" cy="7" r="4.5" stroke="#727173" stroke-width="1.3"/>
+          <path d="M10.5 10.5L14 14" stroke="#727173" stroke-width="1.3" stroke-linecap="round"/>
+        </svg>
+      </div>
+      <button class="btn-primary">
+        <svg width="14" height="14" viewBox="0 0 14 14" fill="none">
+          <path d="M7 1v12M1 7h12" stroke="#fff" stroke-width="1.6" stroke-linecap="round"/>
+        </svg>
+        Industry Analysis
+      </button>
+    </div>
+  </div>
+
+  <!-- Filters row -->
+  <div class="filters-row">
+    <div class="filter-select">
+      <select>
+        <option>Status</option>
+        <option>Completed</option>
+        <option>In Progress</option>
+      </select>
+      <svg width="10" height="6" viewBox="0 0 10 6" fill="none">
+        <path d="M1 1l4 4 4-4" stroke="#727173" stroke-width="1.2" stroke-linecap="round"/>
+      </svg>
+    </div>
+    <div class="filter-select">
+      <select>
+        <option>Geography</option>
+        <option>India</option>
+        <option>USA</option>
+      </select>
+      <svg width="10" height="6" viewBox="0 0 10 6" fill="none">
+        <path d="M1 1l4 4 4-4" stroke="#727173" stroke-width="1.2" stroke-linecap="round"/>
+      </svg>
+    </div>
+    <div class="date-range">
+      <span>Start Data</span>
+      <span class="date-sep">→</span>
+      <span>End Data</span>
+      <svg width="14" height="14" viewBox="0 0 14 14" fill="none" style="margin-left:4px">
+        <rect x="1" y="2" width="12" height="11" rx="1.5" stroke="#727173" stroke-width="1.2"/>
+        <path d="M1 5h12M4 1v2M10 1v2" stroke="#727173" stroke-width="1.2" stroke-linecap="round"/>
+      </svg>
+    </div>
+    <span class="reset-filters">Reset Filters</span>
+    <div class="filter-spacer"></div>
+
+    <div class="toggle-group">
+      <div class="toggle"></div>
+      <span>Unread <span class="count-badge">(2)</span></span>
+    </div>
+    <div class="toggle-group" style="margin-left:12px">
+      <div class="toggle"></div>
+      <span>Archived Deals <span class="count-badge">(4)</span></span>
+    </div>
+  </div>
+
+
+  <!-- Data table -->
+  <div class="table-wrap">
+    <table>
+      <thead>
+        <tr>
+          <th>
+            <span class="th-sort">Industry Name <span class="th-count">16</span></span>
+          </th>
+          <th>Market Size &amp; CAGR</th>
+          <th>Industry segment</th>
+          <th>Key Players</th>
+          <th></th>
+        </tr>
+      </thead>
+      <tbody>
+
+        <!-- Row 1: Passenger Vehicles -->
+        <tr>
+          <td>
+            <div class="td-name">
+              <img class="td-img" src="https://images.unsplash.com/photo-1552519507-da3b142c6e3d?w=216&h=168&fit=crop&auto=format" alt="Passenger Vehicles" />
+              <div class="td-info">
+                <div>
+                  <div class="td-title">Passenger Vehicles</div>
+                  <div class="td-country">India</div>
+                </div>
+                <div class="td-version-row">
+                  <span class="version-badge v3">
+                    <svg width="12" height="12" viewBox="0 0 12 12" fill="none"><circle cx="6" cy="6" r="5.5" stroke="#09A120" stroke-width="1"/><path d="M3 6l2 2 4-4" stroke="#09A120" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                    V3
+                  </span>
+                  <span class="gen-date">Generated on Jan 28, 2026 at 2:39 PM</span>
+                </div>
+              </div>
+            </div>
+          </td>
+          <td>
+            <div class="td-flex-col">
+              <div>
+                <div class="mkt-value">$42.5B – $43.7B</div>
+                <div class="cagr-badge">
+                  <svg width="10" height="10" viewBox="0 0 10 10" fill="none"><path d="M1 7l3-4 2 2 3-4" stroke="#3D3D3D" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                  4.0-5.0% CAGR
+                </div>
+              </div>
+              <div class="mkt-sub">
+                <svg width="8" height="8" viewBox="0 0 8 8" fill="none"><path d="M1 5l2-3 2 1.5 2-3" stroke="#727173" stroke-width="1" stroke-linecap="round"/></svg>
+                $13.7B by 2030
+              </div>
+            </div>
+          </td>
+          <td>
+            <div class="td-flex-col">
+              <div>
+                <div><span class="seg-tag">Tribal Casino Resorts</span></div>
+                <div><span class="seg-tag">Riverboat Casino Operations</span></div>
+              </div>
+              <div class="seg-more">+2 More</div>
+            </div>
+          </td>
+          <td>
+            <div class="players-list">
+              <div class="player-row">
+                <div class="player-logo" style="background:#FF6B00; display:flex; align-items:center; justify-content:center;">
+                  <svg width="10" height="12" viewBox="0 0 10 12" fill="none"><circle cx="5" cy="4" r="3" fill="#fff"/><path d="M5 7v5" stroke="#fff" stroke-width="1.2" stroke-linecap="round"/></svg>
+                </div>
+                Swiggy
+              </div>
+              <div class="player-row">
+                <div class="player-logo" style="background:#0E1F3B; display:flex; align-items:center; justify-content:center;">
+                  <svg width="10" height="10" viewBox="0 0 10 10" fill="none"><rect x="1" y="3" width="8" height="5" rx="1" fill="none" stroke="#fff" stroke-width="1"/><path d="M2 3V2a3 3 0 016 0v1" stroke="#fff" stroke-width="1"/></svg>
+                </div>
+                Uber Eats
+              </div>
+              <div class="player-row">
+                <div class="player-logo" style="background:#E31837; display:flex; align-items:center; justify-content:center;">
+                  <span style="color:#fff; font-size:8px; font-weight:700;">B</span>
+                </div>
+                Bally's Corp...
+              </div>
+            </div>
+          </td>
+          <td>
+            <div class="td-actions">
+              <button title="Download">
+                <svg width="14" height="14" viewBox="0 0 14 14" fill="none"><path d="M7 1v8M4 7l3 3 3-3M2 12h10" stroke="#9F9F9F" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              </button>
+              <button title="More">
+                <svg width="14" height="14" viewBox="0 0 14 14" fill="none"><circle cx="7" cy="3" r="1" fill="#9F9F9F"/><circle cx="7" cy="7" r="1" fill="#9F9F9F"/><circle cx="7" cy="11" r="1" fill="#9F9F9F"/></svg>
+              </button>
+            </div>
+          </td>
+        </tr>
+
+        <!-- Row 2: Electric Two-wheelers -->
+        <tr>
+          <td>
+            <div class="td-name">
+              <img class="td-img" src="https://images.pexels.com/photos/358070/pexels-photo-358070.jpeg?w=216&h=168&fit=crop&auto=compress" alt="Electric Two-wheelers" />
+              <div class="td-info">
+                <div>
+                  <div class="td-title">Electric Two-wheelers and Manufacturi...</div>
+                  <div class="td-country">India</div>
+                </div>
+                <div class="td-version-row">
+                  <span class="version-badge v3">
+                    <svg width="12" height="12" viewBox="0 0 12 12" fill="none"><circle cx="6" cy="6" r="5.5" stroke="#09A120" stroke-width="1"/><path d="M3 6l2 2 4-4" stroke="#09A120" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                    V3
+                  </span>
+                  <span class="gen-date">Generated on Jan 28, 2026 at 2:39 PM</span>
+                </div>
+              </div>
+            </div>
+          </td>
+          <td>
+            <div class="td-flex-col">
+              <div>
+                <div class="mkt-value">$42.5B – $43.7B</div>
+                <div class="cagr-badge">
+                  <svg width="10" height="10" viewBox="0 0 10 10" fill="none"><path d="M1 7l3-4 2 2 3-4" stroke="#3D3D3D" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                  4.0-5.0% CAGR
+                </div>
+              </div>
+              <div class="mkt-sub">
+                <svg width="8" height="8" viewBox="0 0 8 8" fill="none"><path d="M1 5l2-3 2 1.5 2-3" stroke="#727173" stroke-width="1" stroke-linecap="round"/></svg>
+                $13.7B by 2030
+              </div>
+            </div>
+          </td>
+          <td>
+            <div class="td-flex-col">
+              <div>
+                <div><span class="seg-tag">Tribal Casino Resorts</span></div>
+                <div><span class="seg-tag">Riverboat Casino Operations</span></div>
+              </div>
+              <div class="seg-more">+2 More</div>
+            </div>
+          </td>
+          <td>
+            <div class="players-list">
+              <div class="player-row">
+                <div class="player-logo" style="background:#E31837; display:flex; align-items:center; justify-content:center;"><span style="color:#fff;font-size:8px;font-weight:700;">A</span></div>
+                Alask Airline...
+              </div>
+              <div class="player-row">
+                <div class="player-logo" style="background:#E31837; display:flex; align-items:center; justify-content:center;"><span style="color:#fff;font-size:8px;font-weight:700;">B</span></div>
+                Bally's Corp...
+              </div>
+              <div class="player-row">
+                <div class="player-logo" style="background:#0E1F3B; display:flex; align-items:center; justify-content:center;"><svg width="10" height="10" viewBox="0 0 10 10" fill="none"><rect x="1" y="3" width="8" height="5" rx="1" fill="none" stroke="#fff" stroke-width="1"/></svg></div>
+                Uber Eats
+              </div>
+            </div>
+          </td>
+          <td>
+            <div class="td-actions">
+              <button title="Download"><svg width="14" height="14" viewBox="0 0 14 14" fill="none"><path d="M7 1v8M4 7l3 3 3-3M2 12h10" stroke="#9F9F9F" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/></svg></button>
+              <button title="More"><svg width="14" height="14" viewBox="0 0 14 14" fill="none"><circle cx="7" cy="3" r="1" fill="#9F9F9F"/><circle cx="7" cy="7" r="1" fill="#9F9F9F"/><circle cx="7" cy="11" r="1" fill="#9F9F9F"/></svg></button>
+            </div>
+          </td>
+        </tr>
+
+        <!-- Row 3: Smart Home Devices -->
+        <tr>
+          <td>
+            <div class="td-name">
+              <img class="td-img" src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=216&h=168&fit=crop&auto=format" alt="Smart Home Devices" />
+              <div class="td-info">
+                <div>
+                  <div class="td-title">Smart Home Devices</div>
+                  <div class="td-country">India</div>
+                </div>
+                <div class="td-version-row">
+                  <span class="version-badge v3">
+                    <svg width="12" height="12" viewBox="0 0 12 12" fill="none"><circle cx="6" cy="6" r="5.5" stroke="#09A120" stroke-width="1"/><path d="M3 6l2 2 4-4" stroke="#09A120" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                    V3
+                  </span>
+                  <span class="gen-date">Generated on Jan 28, 2026 at 2:39 PM</span>
+                </div>
+              </div>
+            </div>
+          </td>
+          <td>
+            <div class="td-flex-col">
+              <div>
+                <div class="mkt-value">$42.5B – $43.7B</div>
+                <div class="cagr-badge">
+                  <svg width="10" height="10" viewBox="0 0 10 10" fill="none"><path d="M1 7l3-4 2 2 3-4" stroke="#3D3D3D" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                  4.0-5.0% CAGR
+                </div>
+              </div>
+              <div class="mkt-sub">
+                <svg width="8" height="8" viewBox="0 0 8 8" fill="none"><path d="M1 5l2-3 2 1.5 2-3" stroke="#727173" stroke-width="1" stroke-linecap="round"/></svg>
+                $13.7B by 2030
+              </div>
+            </div>
+          </td>
+          <td>
+            <div class="td-flex-col">
+              <div>
+                <div><span class="seg-tag">Tribal Casino Resorts</span></div>
+                <div><span class="seg-tag">Riverboat Casino Operations</span></div>
+              </div>
+              <div class="seg-more">+2 More</div>
+            </div>
+          </td>
+          <td>
+            <div class="players-list">
+              <div class="player-row">
+                <div class="player-logo" style="background:#FF6B00; display:flex; align-items:center; justify-content:center;"><svg width="10" height="12" viewBox="0 0 10 12" fill="none"><circle cx="5" cy="4" r="3" fill="#fff"/><path d="M5 7v5" stroke="#fff" stroke-width="1.2" stroke-linecap="round"/></svg></div>
+                Swiggy
+              </div>
+              <div class="player-row">
+                <div class="player-logo" style="background:#0E1F3B; display:flex; align-items:center; justify-content:center;"><svg width="10" height="10" viewBox="0 0 10 10" fill="none"><rect x="1" y="3" width="8" height="5" rx="1" fill="none" stroke="#fff" stroke-width="1"/></svg></div>
+                Uber Eats
+              </div>
+              <div class="player-row">
+                <div class="player-logo" style="background:#E31837; display:flex; align-items:center; justify-content:center;"><span style="color:#fff;font-size:8px;font-weight:700;">A</span></div>
+                Alask Airline...
+              </div>
+            </div>
+          </td>
+          <td>
+            <div class="td-actions">
+              <button title="Download"><svg width="14" height="14" viewBox="0 0 14 14" fill="none"><path d="M7 1v8M4 7l3 3 3-3M2 12h10" stroke="#9F9F9F" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/></svg></button>
+              <button title="More"><svg width="14" height="14" viewBox="0 0 14 14" fill="none"><circle cx="7" cy="3" r="1" fill="#9F9F9F"/><circle cx="7" cy="7" r="1" fill="#9F9F9F"/></svg></button>
+            </div>
+          </td>
+        </tr>
+
+        <!-- Row 4: Telehealth Service (Report Failed) -->
+        <tr>
+          <td>
+            <div class="td-name">
+              <img class="td-img" src="https://images.unsplash.com/photo-1588776814546-1ffcf47267a5?w=216&h=168&fit=crop&auto=format" alt="Telehealth Service" />
+              <div class="td-info">
+                <div>
+                  <div class="td-title">Telehealth Service</div>
+                  <div class="td-country">India</div>
+                </div>
+                <div class="td-version-row">
+                  <span class="version-badge v2">
+                    <svg width="12" height="12" viewBox="0 0 12 12" fill="none"><circle cx="6" cy="6" r="5.5" stroke="#C11B1D" stroke-width="1"/><path d="M4 4l4 4M8 4l-4 4" stroke="#C11B1D" stroke-width="1.2" stroke-linecap="round"/></svg>
+                    V2
+                  </span>
+                  <span class="gen-date">Report Failed</span>
+                </div>
+              </div>
+            </div>
+          </td>
+          <td><div class="data-unavailable">Data Unavailable</div></td>
+          <td><div class="data-unavailable">Data Unavailable</div></td>
+          <td><div class="data-unavailable">Data Unavailable</div></td>
+          <td>
+            <div class="td-actions">
+              <button title="Download"><svg width="14" height="14" viewBox="0 0 14 14" fill="none"><path d="M7 1v8M4 7l3 3 3-3M2 12h10" stroke="#C5C5C5" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/></svg></button>
+              <button title="More"><svg width="14" height="14" viewBox="0 0 14 14" fill="none"><circle cx="7" cy="3" r="1" fill="#C5C5C5"/><circle cx="7" cy="7" r="1" fill="#C5C5C5"/><circle cx="7" cy="11" r="1" fill="#C5C5C5"/></svg></button>
+            </div>
+          </td>
+        </tr>
+
+        <!-- Row 5: Casino Hotels -->
+        <tr>
+          <td>
+            <div class="td-name">
+              <img class="td-img" src="https://images.pexels.com/photos/258154/pexels-photo-258154.jpeg?w=216&h=168&fit=crop&auto=compress" alt="Casino Hotels" />
+              <div class="td-info">
+                <div>
+                  <div class="td-title">Casino Hotels</div>
+                  <div class="td-country">India</div>
+                </div>
+                <div class="td-version-row">
+                  <span class="version-badge v3">
+                    <svg width="12" height="12" viewBox="0 0 12 12" fill="none"><circle cx="6" cy="6" r="5.5" stroke="#09A120" stroke-width="1"/><path d="M3 6l2 2 4-4" stroke="#09A120" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                    V3
+                  </span>
+                  <span class="gen-date">Generated on Jan 28, 2026 at 2:39 PM</span>
+                </div>
+              </div>
+            </div>
+          </td>
+          <td>
+            <div class="td-flex-col">
+              <div>
+                <div class="mkt-value">$42.5B – $43.7B</div>
+                <div class="cagr-badge">
+                  <svg width="10" height="10" viewBox="0 0 10 10" fill="none"><path d="M1 7l3-4 2 2 3-4" stroke="#3D3D3D" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                  4.0-5.0% CAGR
+                </div>
+              </div>
+              <div class="mkt-sub">
+                <svg width="8" height="8" viewBox="0 0 8 8" fill="none"><path d="M1 5l2-3 2 1.5 2-3" stroke="#727173" stroke-width="1" stroke-linecap="round"/></svg>
+                $13.7B by 2030
+              </div>
+            </div>
+          </td>
+          <td>
+            <div class="td-flex-col">
+              <div>
+                <div><span class="seg-tag">Tribal Casino Resorts</span></div>
+                <div><span class="seg-tag">Riverboat Casino Operations</span></div>
+              </div>
+              <div class="seg-more">+2 More</div>
+            </div>
+          </td>
+          <td>
+            <div class="players-list">
+              <div class="player-row">
+                <div class="player-logo" style="background:#222; display:flex; align-items:center; justify-content:center;"><span style="color:#fff;font-size:8px;font-weight:700;">B</span></div>
+                Base Design
+              </div>
+              <div class="player-row">
+                <div class="player-logo" style="background:#E31837; display:flex; align-items:center; justify-content:center;"><span style="color:#fff;font-size:8px;font-weight:700;">A</span></div>
+                Alask Airline...
+              </div>
+              <div class="player-row">
+                <div class="player-logo" style="background:#E31837; display:flex; align-items:center; justify-content:center;"><span style="color:#fff;font-size:8px;font-weight:700;">B</span></div>
+                Bally's Corp...
+              </div>
+            </div>
+          </td>
+          <td>
+            <div class="td-actions">
+              <button title="Download"><svg width="14" height="14" viewBox="0 0 14 14" fill="none"><path d="M7 1v8M4 7l3 3 3-3M2 12h10" stroke="#9F9F9F" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/></svg></button>
+              <button title="More"><svg width="14" height="14" viewBox="0 0 14 14" fill="none"><circle cx="7" cy="3" r="1" fill="#9F9F9F"/><circle cx="7" cy="7" r="1" fill="#9F9F9F"/><circle cx="7" cy="11" r="1" fill="#9F9F9F"/></svg></button>
+            </div>
+          </td>
+        </tr>
+
+      </tbody>
+    </table>
+  </div>
+
+  <!-- Pagination -->
+  <div class="pagination-row">
+    <span class="pg-info">1–5 of 16</span>
+    <div class="pg-controls">
+      <button class="pg-btn" title="Previous">&#8249;</button>
+      <div class="pg-nums">
+        <div class="pg-num active">1</div>
+        <div class="pg-num">2</div>
+        <div class="pg-num">3</div>
+        <div class="pg-num">4</div>
+        <div class="pg-num">5</div>
+      </div>
+      <button class="pg-btn" title="Next">&#8250;</button>
+    </div>
+  </div>
+
+</body>
+</html>
