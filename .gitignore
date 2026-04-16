@@ -14,3 +14,5 @@ tmp/
 *.gif
 *.svg
 !assets/
+
+.vercel

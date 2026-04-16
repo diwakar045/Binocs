@@ -425,7 +425,8 @@ body {
   border: 1px solid var(--grey-border);
 }
 .infer-row.auto { background: #F4FBF7; border-color: #B7E5CC; }
-.infer-row.warn { background: #FFFBEB; border-color: #FCD34D; }
+.infer-row.review { background: #FFFBEB; border-color: #FCD34D; }
+.infer-row.updated { background: #F9FAFB; border-color: #E5E7EB; }
 .infer-label { font-size: 11px; color: var(--text-muted); }
 .infer-val { font-size: 13px; font-weight: 500; color: var(--text-dark); }
 .infer-tag {
@@ -436,7 +437,8 @@ body {
   flex-shrink: 0;
 }
 .infer-tag.auto { background: var(--green-light); color: var(--green-text); }
-.infer-tag.warn { background: var(--amber-bg); color: var(--amber); }
+.infer-tag.review { background: var(--amber-bg); color: var(--amber); }
+.infer-tag.updated { background: #E5E7EB; color: #6B7280; }
 
 /* confidence section */
 .conf-section { width: 100%; max-width: 520px; margin-bottom: 20px; }
