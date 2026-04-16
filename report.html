@@ -733,8 +733,8 @@ function goToUnderstanding(isUrl = false) {
     reportTypeVal.textContent = 'Industry Report';
   }
   
-  // Reset all tags to auto/green
-  document.querySelectorAll('.screen#s2 .infer-tag').forEach(tag => {
+  // Reset high confidence tags to auto/green
+  document.querySelectorAll('#understand-high .infer-tag').forEach(tag => {
     tag.textContent = 'Auto';
     tag.className = 'infer-tag auto';
     tag.closest('.infer-row').className = tag.closest('.infer-row').className.replace(/(updated|review)/g, 'auto');
